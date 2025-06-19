@@ -1,4 +1,6 @@
-
+# -------------------------------------
+# Bayesian Variable Selection via MCMC
+# -------------------------------------
 
 inv <- function(X){
 	EV <- eigen(X)
@@ -41,7 +43,7 @@ gocho <- function(niter, y, X){
 }
 
 set.seed(33)
-file_path <- "test.txt"
+file_path <- "test.txt" #<--- Your file here 
 data <- read.table(file_path)
 df <- data.frame(data)
 y <- df[,7]
