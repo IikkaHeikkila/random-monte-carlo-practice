@@ -1,3 +1,6 @@
+# --------------------------------------------------------
+# Bayesian Model Averaging for Regression via MC3 Algorithm
+# --------------------------------------------------------
 
 library("BMA")
 set.seed(666)
