@@ -1,7 +1,12 @@
+# --------------------------------------------------
+# Bayesian Hierarchical Modeling with Gibbs Sampling
+# --------------------------------------------------
+
+
 #In this implementation, we suppose that there is no missing data
 #...and theres equal n of rows for each variable 
 
-#Energy.txt is placed on current wd
+#Use your own file here
 Energy <- read.table("Energy.txt", header = TRUE)
 
 set.seed(33)
@@ -68,13 +73,6 @@ sigma2_collection <- sigma2_collection[1001:niter]
 my_collection <- my_collection[1001:niter]
 theta_1_collection <- theta_1_collection[1001:niter]
 theta_2_collection <- theta_2_collection[1001:niter]
-
-#hist(sigma_my2_collection, breaks=50, col="lightgreen", main="sigma_my2")
-#hist(tau2_collection, breaks=50, col="lightgreen", main="tau2")
-#hist(sigma2_collection, breaks=50, col="lightgreen", main="sigma2")
-#hist(my_collection, breaks=50, col="lightgreen", main="my")
-#hist(theta_1_collection, breaks=50, col="lightgreen", main="theta_1")
-#hist(theta_2_collection, breaks=50, col="lightgreen", main="theta_2")
 
 calculate_summary <- function(vector) {
 	mean <- mean(vector)
