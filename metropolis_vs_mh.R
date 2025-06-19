@@ -1,3 +1,7 @@
+# -------------------------------------------------------------
+# Monte Carlo Sampling in R: Metropolis and Metropolis-Hastings
+# -------------------------------------------------------------
+
 normm<-function (Nsim, a) 
 {
         vec <- vector("numeric", Nsim)
