@@ -1,3 +1,7 @@
+# --------------------------------------------------------------------
+# Nonparametric and Parametric Bootstrap for Linear Mixed Effects Model
+# --------------------------------------------------------------------
+
 dyes <- data.frame(
   Batch = c(1, 2, 3, 4, 5, 6),
   Yield = c(	
