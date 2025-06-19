@@ -1,3 +1,7 @@
+# -----------------------------------------------------
+# Adaptive vs Non-Adaptive MCMC on Rosenbrock Function
+# -----------------------------------------------------
+
 library(adaptMCMC)
 library(coda)
 
